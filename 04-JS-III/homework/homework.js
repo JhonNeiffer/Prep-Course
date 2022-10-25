@@ -3,18 +3,21 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  return array [0]
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  return array[array.lengh -1]
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  return array.lengh
 }
 
 
@@ -23,6 +26,12 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  let NuevoArreglo = []
+  for (let i = 0; index < array.length; index++) {
+   NuevoArreglo[i] = array[i] + 1
+    }
+    return NuevoArreglo
+
 }
 
 
@@ -30,6 +39,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+  array.push(elemento)
+  return array
 }
 
 
@@ -38,6 +49,9 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+
+  array.unshift(elemento)
+  return array
 }
 
 
@@ -47,6 +61,9 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+
+  let palabras =["Bienvenidos", "a", "mi", "casa"]
+return palabras.join(" ")
 }
 
 
@@ -54,6 +71,14 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  for (let i = 0; i < array.length; i++) {
+    if(elemento === array[index]) 
+    return true
+    else{
+      return false
+    } 
+    
+  }
 }
 
 
@@ -61,6 +86,11 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  let sumar = 0
+  for (let i = 0; i < numeros.length; i++) {
+    sumar = sumar + numeros[i]
+     }
+     return sumar
 }
 
 
@@ -68,6 +98,11 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+  let promedio = []
+  for (let i = 0; i < promedio.length; i++) {
+    resultadosTest === promedio[i]
+    }
+  return promedio
 }
 
 
@@ -75,6 +110,9 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+
+  numeros = [1,2,3,4]
+  return numeros.lengh(3)
 }
 
 
@@ -82,13 +120,27 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+
+  let totales =[]
+
+  if(arguments.length < 1) return 0
+  for (let i = 0; i < array.length; i++) {
+    totales = totales[i] * anguments.lengh 
+    
+  }
 }
 
 
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-
+  let elementos = 0
+  for (let index = 0; index < arreglo.length; index++) {
+    if (arreglo[i]< 19)
+    elementos++
+    
+  }
+ return elementos
 }
 
 
@@ -97,7 +149,10 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  
+ if(numeroDeDia = 1) 
+ return "Es Fin De Semana"
+ if(numeroDeDia = 2) 
+ return "Es dia Laboral"
 } 
 
 
@@ -105,7 +160,11 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  
+  if(n === 9)  
+  return true
+  else{ 
+  return false
+}
 }
 
 
